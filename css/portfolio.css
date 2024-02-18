@@ -20,13 +20,12 @@ body {
 }
 
 header {
-  background-color: #e7e9fc;
-  display: flex;
-  justify-content: space-between;
+  background-color: var(--primary-color);
+  display: flex; /* altfel nu reuseam sa le pozitinez sa arate cat de cat bine */
+  justify-content: space-between; /* am incercat si fara, arata aiurea */
   align-items: center;
   height: 64px;
   text-align: left;
-
   align-items: center;
 }
 
@@ -46,9 +45,7 @@ header .studio {
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-decoration: none;
-
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-family: Raleway;
@@ -86,29 +83,51 @@ header .studio {
   margin-right: 20px;
 }
 
-.main-nav ul li a {
-  text-decoration: none;
-  color: var(--accent-color-text);
-  font-weight: 500;
-  font-size: 16px;
+.main-nav ul li:last-child {
+  /* zicea Silviu profu' de treaba asta si am zis sa incerc */
+  margin-right: 0;
 }
 
-.address li {
+.index {
+  width: 48px;
+  height: 24px;
+  color: var(--accent-color-text);
+  font-weight: 500;
+}
+
+.portfolio {
+  width: 66px;
+  height: 24px;
+  color: var(--accent-color-text);
+  font-weight: 500;
+}
+
+.contacts {
+  width: 67px;
+  height: 24px;
+  color: var(--accent-color-text);
+  font-weight: 500;
+}
+
+.address a {
   color: var(--accent-color-description);
   font-weight: 400;
   letter-spacing: 0.02em;
-  align-items: center;
 }
 
 .filters ul {
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 24px; /* preluat din layout, dar inca nu stiu daca are sau nu efect */
   padding: 10px 20px;
 }
 
 .filters li,
-button {
+.filters button {
+  margin: 0; /* pentru setarea marginilor la zero */
+}
+
+.filters li button {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -116,7 +135,7 @@ button {
   letter-spacing: 0.04em;
   text-align: center;
   border-radius: 4px;
-  padding: 8px 24px 8px 24px;
+  padding: 8px 24px;
   background-color: var(--accent-color-filters);
   color: var(--accent-color-iris);
   cursor: pointer;
@@ -137,7 +156,7 @@ ul {
 .row-1 ul,
 .row-2 ul,
 .row-3 ul {
-  justify-content: center;
+  justify-content: center; /* daca a mers mai sus de ce nu ar merge si aici */
   align-items: center;
   gap: 20px;
   margin-bottom: 5%;
@@ -146,7 +165,7 @@ ul {
 
 footer {
   background-color: var(--accent-color-text);
-  padding: 50px 0;
+  padding: 50px 0; /* singura varianta care am gasit-o sa arata cat de cat bine */
 }
 
 footer p {
