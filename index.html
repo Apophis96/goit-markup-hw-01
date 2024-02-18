@@ -3,28 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Webstudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
-  <body>
-    <!-- Header cu navigatie si contacte -->
-    <header class="index-header">
-      <!-- Logo ca text-link -->
+    <header class="global-header">
       <a class="logo" href="index.html">
-        <span class="web">Web</span>
-        <span class="studio">Studio</span>
+        <span class="web">web</span>
+        <span class="studio">studio</span>
       </a>
-
-      <!-- Navigatie -->
-      <nav class="index-nav">
-        <ul class="ul-1">
-          <li><a href="index.html">Studio</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contacts.html">Contacts</a></li>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="index">Studio</a></li>
+          <li><a href="portfolio.html" class="portfolio">Portofolio</a></li>
+          <li><a href="contacts.html" class="contacts">Contacts</a></li>
         </ul>
 
-        <ul class="ul-2">
+        <ul class="address">
           <li>
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -35,25 +35,18 @@
       </nav>
     </header>
 
-    <!-- Sectiunea principala -->
     <main>
-      <!-- Hero Section -->
-      <section>
-        <div class="hero">
-          <h1>
-            Effective Solutions
-            <br />
-            for Your Business
-          </h1>
-          <button type="button">Order Service</button>
-        </div>
+      <section class="hero">
+        <h1>
+          Effective Solutions
+          <br />
+          for your business
+        </h1>
+        <button type="button" class="button">Order Service</button>
       </section>
-
-      <!-- Sectiunea Features -->
 
       <section>
         <ul class="features">
-          <!-- Feature 1 -->
           <li class="feature">
             <h3>Strategy</h3>
             <p>
@@ -61,7 +54,6 @@
               perfect and creative solution.
             </p>
           </li>
-          <!-- Feature 2 -->
           <li class="feature">
             <h3>Punctuality</h3>
             <p>
@@ -69,7 +61,6 @@
               within the shortest possible time.
             </p>
           </li>
-          <!-- Feature 3 -->
           <li class="feature">
             <h3>Diligence</h3>
             <p>
@@ -77,7 +68,6 @@
               growth opportunities and minimize risk.
             </p>
           </li>
-          <!-- Feature 4 -->
           <li class="feature">
             <h3>Technologies</h3>
             <p>
@@ -92,22 +82,19 @@
         <div>
           <h2 class="what-are">What Are We Doing</h2>
           <ul class="images">
-            <li><img src="images/1.jpg" alt="Descriere imagine 1" /></li>
-            <li><img src="images/2.jpg" alt="Descriere imagine 2" /></li>
-            <li><img src="images/3.jpg" alt="Descriere imagine 3" /></li>
+            <li><img src="images/monitor.jpg" alt="Descriere imagine 1" /></li>
+            <li><img src="images/phone.jpg" alt="Descriere imagine 2" /></li>
+            <li><img src="images/laptop.jpg" alt="Descriere imagine 3" /></li>
           </ul>
         </div>
       </section>
-
-      <!-- Sectiunea 'Our Team' -->
-
       <section class="card">
         <h2 class="our-team">Our Team</h2>
         <ul class="team">
           <li class="team-member">
             <figure>
               <img
-                src="images/mark.jpg"
+                src="images/teamcard1.jpg"
                 alt="Mark Guerrero - Product Designer"
                 width="264"
                 height="260"
@@ -121,7 +108,7 @@
           <li class="team-member">
             <figure>
               <img
-                src="images/tom.jpg"
+                src="images/teamcard2.jpg"
                 alt="Tom Ford - Frontend Developer"
                 width="264"
                 height="260"
@@ -135,7 +122,7 @@
           <li class="team-member">
             <figure>
               <img
-                src="images/camila.jpg"
+                src="images/teamcard3.jpg"
                 alt="Camila Garcia - Marketing"
                 width="264"
                 height="260"
@@ -149,7 +136,7 @@
           <li class="team-member">
             <figure>
               <img
-                src="images/daniel.jpg"
+                src="images/teamcard4.jpg"
                 alt="Daniel Wilson - UI Designer"
                 width="264"
                 height="260"
@@ -163,20 +150,15 @@
         </ul>
       </section>
     </main>
-
-    <!-- Footer -->
     <footer class="footer-index">
-      <!-- Logo ca text-link repetat -->
       <a class="logo-footer" href="index.html">
-        <span class="web-footer">Web</span>
-        <span class="studio-footer">Studio</span>
+        <span class="web-footer">web</span>
+        <span class="studio-footer">studio</span>
       </a>
-
-      <!-- Adresa -->
-      <address class="address">
+      <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
-      </address>
+      </p>
     </footer>
   </body>
 </html>

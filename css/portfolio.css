@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #e7e9fc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,134 +100,50 @@ header .studio {
   align-items: center;
 }
 
-.hero {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 70px;
-  letter-spacing: 0.02em;
-  text-align: center;
-  background-color: var(--accent-color-text);
-  color: #ffffff;
-  padding: 100px 0;
-}
-
-.hero button {
+.filters ul {
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
   padding: 10px 20px;
-  background-color: var(--accent-color-iris);
-  cursor: pointer;
-  color: #fefefe;
-  border: none;
-  border-radius: 4px;
 }
 
-.features h3 {
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
-
-.features p {
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  gap: 8px;
-}
-
-.feature {
-  list-style: none;
-  justify-content: center;
-  width: 15%;
-}
-
-.what-are {
-  justify-content: center;
-  margin-bottom: 5%;
-  display: flex;
-
-  font-family: Roboto;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.images {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 15px;
-}
-
-.card {
-  background-color: var(--accent-color-cloud);
-  padding: 100px 0;
-  margin-top: 5%;
-}
-
-.our-team {
-  justify-content: center;
-  display: flex;
-  margin-top: 5%;
-  margin-bottom: 5%;
-
-  font-family: Roboto;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.team {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  padding: 0px 0px 32px 0px;
-  border-radius: 0px 0px 4px 4px;
-  gap: 32px;
-}
-
-.card ul {
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.card p {
+.filters li,
+button {
   font-family: Roboto;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   text-align: center;
+  border-radius: 4px;
+  padding: 8px 24px 8px 24px;
+  background-color: var(--accent-color-filters);
+  color: var(--accent-color-iris);
+  cursor: pointer;
+  border: none;
 }
 
-.team-member {
-  background-color: var(--primary-color);
+.filters li button:hover {
+  color: var(--primary-color);
+  background-color: var(--button-color-filters);
 }
 
 ul {
   list-style: none;
   display: flex;
+  text-decoration: none;
 }
+
+.row-1 ul,
+.row-2 ul,
+.row-3 ul {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 5%;
+  border: 1px solid #e7e9fc;
+}
+
 footer {
   background-color: var(--accent-color-text);
   padding: 50px 0;
