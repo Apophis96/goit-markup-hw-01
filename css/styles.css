@@ -21,12 +21,13 @@ body {
 
 header {
   background-color: var(--primary-color);
-  display: flex; /* altfel nu reuseam sa le pozitinez sa arate cat de cat bine */
-  justify-content: space-between; /* am incercat si fara, arata aiurea */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 64px;
   text-align: left;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 header a {
@@ -54,6 +55,7 @@ header .studio {
   line-height: 21px;
   letter-spacing: 0.03em;
   text-align: left;
+  margin-left: 156px;
 }
 
 .web {
@@ -80,12 +82,11 @@ header .studio {
 }
 
 .main-nav ul li {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .main-nav ul li:last-child {
-  /* zicea Silviu profu' de treaba asta si am zis sa incerc */
-  margin-right: 0;
+  margin-right: 156px;
 }
 
 .index {
@@ -115,6 +116,10 @@ header .studio {
   letter-spacing: 0.02em;
 }
 
+.address a:hover {
+  color: var(--accent-color-iris);
+}
+
 .hero {
   font-size: 56px;
   font-weight: 700;
@@ -123,16 +128,20 @@ header .studio {
   text-align: center;
   background-color: var(--accent-color-text);
   color: #ffffff;
-  padding: 100px 0; /* fara padding nu arata ok */
+  padding: 100px 0;
 }
 
 .hero button {
-  padding: 10px 20px; /* la fel si aici, fara nu imi arata bine */
+  padding: 10px 20px;
   background-color: var(--accent-color-iris);
   cursor: pointer;
   color: #fefefe;
   border: none;
-  border-radius: 4px; /* asta e luat din layout, sper ca e ok */
+  border-radius: 4px;
+}
+
+.button:active {
+  background-color: var(--button-color-filters);
 }
 
 .features h3 {
@@ -146,11 +155,12 @@ header .studio {
 
 .features p {
   font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
+  color: var(--accent-color-description);
 }
 
 .features {
@@ -189,7 +199,7 @@ header .studio {
 
 .card {
   background-color: var(--accent-color-cloud);
-  padding: 100px 0; /* la fel, fara nu e centrat cat de cat ok */
+  padding: 100px 0;
   margin-top: 5%;
 }
 
@@ -243,7 +253,7 @@ ul {
 }
 footer {
   background-color: var(--accent-color-text);
-  padding: 50px 0; /* singura varianta care am gasit-o sa arata cat de cat bine */
+  padding: 50px 0;
 }
 
 footer p {
@@ -253,6 +263,7 @@ footer p {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
+  margin-left: 156px;
 }
 
 footer a {
@@ -271,14 +282,14 @@ footer .studio {
 
 .web-footer {
   color: var(--accent-color-iris);
-  font-weight: 800; /* le-am pus si aici ca zici ca a intrat dracu in ele si nu vor sa preia greutatea */
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
 }
 
 .studio-footer {
   color: var(--accent-color-cloud);
-  font-weight: 800; /* idem */
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
 }
@@ -297,4 +308,5 @@ footer .studio {
   line-height: 21px;
   letter-spacing: 0.03em;
   text-align: left;
+  margin-left: 156px;
 }
