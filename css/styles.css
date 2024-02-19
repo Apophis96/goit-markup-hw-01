@@ -27,7 +27,6 @@ header {
   height: 64px;
   text-align: left;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 header a {
@@ -115,7 +114,6 @@ header .studio {
   font-weight: 400;
   letter-spacing: 0.02em;
 }
-
 .address a:hover {
   color: var(--accent-color-iris);
 }
@@ -132,12 +130,26 @@ header .studio {
 }
 
 .hero button {
-  padding: 10px 20px;
   background-color: var(--accent-color-iris);
   cursor: pointer;
   color: #fefefe;
   border: none;
   border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  top: 428px;
+  left: 636px;
+  border-radius: 4px;
+  gap: 10px;
+}
+/*eroare github nu preia marimea butonului*/
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .button:active {
@@ -145,7 +157,7 @@ header .studio {
 }
 
 .features h3 {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -154,7 +166,7 @@ header .studio {
 }
 
 .features p {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -169,25 +181,26 @@ header .studio {
   list-style: none;
   margin-top: 5%;
   margin-bottom: 5%;
-  gap: 8px;
+  gap: 24px;
 }
 
 .feature {
   list-style: none;
   justify-content: center;
-  width: 15%;
+  width: 18%;
 }
 
 .what-are {
   justify-content: center;
   margin-bottom: 5%;
   display: flex;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.02em;
   text-align: center;
+  color: var(--accent-color-text);
 }
 
 .images {
@@ -203,17 +216,29 @@ header .studio {
   margin-top: 5%;
 }
 
+.card team-member1,
+.card team-member2,
+.card team-member3,
+.card team-member4 {
+  width: 360px;
+  height: 420px;
+  border: 1px solid var(--accent-color-filters);
+  padding: 0 0 32px 0;
+  text-align: center;
+}
+
 .our-team {
   justify-content: center;
   display: flex;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.02em;
   text-align: center;
+  color: var(--accent-color-text);
 }
 
 .team {
@@ -226,7 +251,7 @@ header .studio {
 }
 
 .card ul {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -235,12 +260,23 @@ header .studio {
 }
 
 .card p {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
+  color: var(--accent-color-description);
+}
+
+.card h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--accent-color-text);
 }
 
 .team-member {
@@ -297,9 +333,7 @@ footer .studio {
 .logo-footer {
   display: flex;
   align-items: center;
-
   text-decoration: none;
-
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-family: Raleway;
