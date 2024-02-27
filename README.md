@@ -1,4 +1,4 @@
-# Tema #2 GoIT
+# Tema #3 GoIT
 
 Realizare HTML si CSS WebStudio Figma
 
