@@ -3,4 +3,4 @@
 Realizare HTML si CSS WebStudio Figma
 
 ## Link către Pagina Live
-[Webstudio Tema 2](https://apophis96.github.io/goit-markup-hw-01/)
+[Webstudio Tema 3](https://apophis96.github.io/goit-markup-hw-01/)
