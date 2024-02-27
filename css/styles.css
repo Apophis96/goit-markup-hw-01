@@ -6,39 +6,89 @@
   --button-color-filters: #404bbf;
   --accent-color-filters: #e7e9fc;
   --accent-color-cloud: #f4f4fd;
+  --green-new-color: #31d0aa;
+  --grey-new-color: #8e8f99;
+  --white-new-color: #fcfcfc;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+  font-family: var(--font-family);
+}
+
+.header-container {
+  width: 1200px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-container {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.description-container {
+  width: 1200px;
+  height: 104px;
+  margin-top: 120px;
+}
+
+.pictures-container {
+  width: 1200px;
+  height: 412px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.id-container {
+  width: 1200px;
+  height: 732px;
+}
+
+.last-container {
+  width: 1200px;
+  height: 312px;
+  margin: 0 auto;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   background-color: var(--primary-color);
-  font-style: normal;
   letter-spacing: 0.02em;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 100%;
-  min-height: 100vh;
 }
 
-header {
+.global-header {
   background-color: var(--primary-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 64px;
-  text-align: left;
-  align-items: center;
+  border-bottom: 1px solid #e7e9fc;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-header a {
+.global-header a {
   text-decoration: none;
-}
-
-header .web,
-header .studio {
-  text-transform: uppercase;
-  font-family: "Raleway";
-  font-weight: 800;
-  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -46,118 +96,111 @@ header .studio {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
-  margin-left: 156px;
 }
 
 .web {
   color: var(--accent-color-iris);
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .studio {
   color: var(--accent-color-text);
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-left: 76px;
 }
 
 .main-nav ul {
   list-style: none;
-  display: flex;
 }
 
 .main-nav ul li {
-  margin-right: 40px;
+  padding-left: 40px;
 }
 
-.main-nav ul li:last-child {
-  margin-right: 156px;
+.main-nav a:hover {
+  color: var(--button-color-filters);
 }
 
-.index {
-  width: 48px;
-  height: 24px;
-  color: var(--accent-color-text);
-  font-weight: 500;
-}
-
-.portfolio {
-  width: 66px;
-  height: 24px;
-  color: var(--accent-color-text);
-  font-weight: 500;
-}
-
+.index,
+.portfolio,
 .contacts {
-  width: 67px;
-  height: 24px;
+  letter-spacing: 0.02em;
   color: var(--accent-color-text);
   font-weight: 500;
 }
 
-.address a {
+.address ul li a {
   color: var(--accent-color-description);
   font-weight: 400;
   letter-spacing: 0.02em;
-}
-.address a:hover {
-  color: var(--accent-color-iris);
+  /* padding-left: 40px; */
 }
 
-.hero {
+.address a:hover {
+  color: var(--button-color-filters);
+}
+
+.hero h1 {
   font-size: 56px;
   font-weight: 700;
   line-height: 70px;
   letter-spacing: 0.02em;
+  padding-top: 188px;
+}
+
+.solutions {
+  box-sizing: content-box;
+  width: 496px;
+  height: 120px;
+  margin: auto;
+}
+
+.hero {
   text-align: center;
   background-color: var(--accent-color-text);
-  color: #ffffff;
-  padding: 100px 0;
+  color: var(--primary-color);
 }
 
 .hero button {
   background-color: var(--accent-color-iris);
   cursor: pointer;
-  color: #fefefe;
+  color: var(--primary-color);
   border: none;
-  border-radius: 4px;
   width: 169px;
   height: 56px;
-  top: 428px;
-  left: 636px;
   border-radius: 4px;
-  gap: 10px;
+  margin-top: 48px; /* ce e asta ????????????????????????*/
 }
-/*eroare github nu preia marimea butonului*/
+
 .button {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.04em;
   text-align: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.button:active {
+.hero button:hover {
   background-color: var(--button-color-filters);
 }
 
-.features h3 {
-  font-family: "Roboto", sans-serif;
+.hero button:active {
+  background-color: var(--accent-color-iris);
+}
+
+.one h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -165,8 +208,7 @@ header .studio {
   text-align: left;
 }
 
-.features p {
-  font-family: "Roboto", sans-serif;
+.one p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -175,35 +217,54 @@ header .studio {
   color: var(--accent-color-description);
 }
 
-.features {
+.one {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  gap: 24px;
 }
 
 .feature {
   list-style: none;
   justify-content: center;
-  width: 18%;
+  width: 100%;
+}
+
+.strategy,
+.punctuality,
+.diligence,
+.tehnologies {
+  box-sizing: content-box;
+  width: 264px;
+  height: 104px;
+  margin-top: 8px;
 }
 
 .what-are {
   justify-content: center;
-  margin-bottom: 5%;
-  display: flex;
-  font-family: "Roboto", sans-serif;
+  margin-bottom: 72px;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 111%;
+  text-transform: capitalize;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color-text);
 }
 
-.images {
+.about ul.images {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 59px;
+}
+
+.about {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+.card ul.team-member {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -212,84 +273,71 @@ header .studio {
 
 .card {
   background-color: var(--accent-color-cloud);
-  padding: 100px 0;
-  margin-top: 5%;
-}
-
-.card team-member1,
-.card team-member2,
-.card team-member3,
-.card team-member4 {
-  width: 360px;
-  height: 420px;
-  border: 1px solid var(--accent-color-filters);
-  padding: 0 0 32px 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .our-team {
   justify-content: center;
   display: flex;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color-text);
+  text-transform: capitalize;
+  padding-top: 120px;
 }
 
 .team {
   display: flex;
-  list-style: none;
-  justify-content: center;
-  padding: 0px 0px 32px 0px;
+  justify-content: space-evenly;
   border-radius: 0px 0px 4px 4px;
-  gap: 24px;
-}
-
-.card ul {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: center;
+  gap: 47px;
+  padding-top: 72px;
 }
 
 .card p {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color-description);
+  margin-top: 8px;
 }
 
 .card h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color-text);
+  margin-top: 32px;
 }
 
 .team-member {
+  width: 264px;
+  height: 380px;
+  border: 1px solid var(--accent-color-filters);
+  padding: 0 0 32px 0;
+  text-align: center;
   background-color: var(--primary-color);
+}
+
+.team-member:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 ul {
   list-style: none;
   display: flex;
 }
+
 footer {
   background-color: var(--accent-color-text);
-  padding: 50px 0;
 }
 
 footer p {
@@ -299,18 +347,23 @@ footer p {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
-  margin-left: 156px;
 }
 
 footer a {
   text-decoration: none;
 }
 
+.increase {
+  box-sizing: content-box;
+  width: 264px;
+  height: 72px;
+  padding-top: 16px;
+}
+
 footer .web,
 footer .studio {
   text-transform: uppercase;
   width: 115px;
-  font-family: Raleway;
   font-weight: 800;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -334,13 +387,12 @@ footer .studio {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.03em;
   text-align: left;
-  margin-left: 156px;
+  padding-top: 100px;
 }
