@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--header si navigatie-->
     <header class="global-header">
       <div class="header-container">
         <a class="logo" href="index.html">
@@ -29,11 +30,14 @@
         <div class="main-nav">
           <nav>
             <ul>
-              <li><a href="index.html" class="index">Studio</a></li>
-              <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
+              <li><a href="index.html" class="index active">Studio</a></li>
+              <li>
+                <a href="portfolio.html" class="portfolio active">Portfolio</a>
+              </li>
               <li><a href="contacts.html" class="contacts">Contacts</a></li>
             </ul>
           </nav>
+          <!--contact numar telefon si mail-->
           <div class="address">
             <ul>
               <li>
@@ -47,15 +51,27 @@
         </div>
       </div>
     </header>
-
+    <!--sectiune hero si buton "order service"-->
     <main>
       <section class="hero">
         <div class="hero-container">
           <h1 class="solutions">Effective Solutions for your business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button
+            type="button"
+            class="button order-service-btn"
+            data-modal-open
+          >
+            Order Service
+          </button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+            <button class="close-btn" data-modal-close>&times;</button>
+            Continut modal
+          </div>
         </div>
       </section>
-
+      <!--sectiune descriere servicii si vectori -->
       <section class="one">
         <div class="description-container">
           <ul>
@@ -112,7 +128,7 @@
           </ul>
         </div>
       </section>
-
+      <!--sectiune "what are we doing" si imagini-->
       <section class="about">
         <div class="pictures-container">
           <h2 class="what-are">what are we doing</h2>
@@ -144,7 +160,7 @@
           </ul>
         </div>
       </section>
-
+      <!--sectiune "our team" si social links-->
       <section class="card">
         <div class="id-container">
           <h2 class="our-team">our team</h2>
@@ -376,7 +392,7 @@
           </ul>
         </div>
       </section>
-
+      <!--sectiune "customers"-->
       <section class="customers">
         <div class="customers-logo">
           <h2 class="custom">customers</h2>
@@ -415,7 +431,7 @@
         </div>
       </section>
     </main>
-
+    <!--sectiune footer, logo si linkuri sociale-->
     <footer class="page-footer">
       <div class="last-container">
         <div class="footer-extras">
@@ -479,5 +495,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

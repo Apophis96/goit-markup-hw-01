@@ -8,7 +8,7 @@
   --accent-color-cloud: #f4f4fd;
   --green-new-color: #31d0aa;
   --grey-new-color: #8e8f99;
-  --white-new-color: #fcfcfc;
+  --modal-background-color: #fcfcfc;
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
   --grey: rgba(46, 47, 66, 0.7);
   --font-family: "Roboto", sans-serif;
@@ -35,6 +35,7 @@ h3 {
   font-family: var(--font-family);
 }
 
+/*--stilizare containere principale--*/
 .header-container {
   width: 1200px;
   height: 72px;
@@ -47,8 +48,7 @@ h3 {
 .hero-container {
   width: 1440px;
   height: 600px;
-  margin: 72px auto 0;
-  position: relative;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -58,22 +58,22 @@ h3 {
 }
 
 .description-container {
+  justify-content: center;
   width: 1200px;
-  height: 104px;
+  height: 224px;
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .pictures-container {
   width: 1200px;
   height: 412px;
-  margin-top: 120px;
   margin-bottom: 120px;
 }
 
 .id-container {
   width: 1200px;
-  height: 732px;
-  margin-bottom: 120px;
+  height: 780px;
 }
 
 .customers-logo {
@@ -97,12 +97,14 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare global header si logo webstudio--*/
 .global-header {
   background-color: var(--primary-color);
   border-bottom: 1px solid #e7e9fc;
-  position: fixed;
-  position: fixed;
+  position: sticky;
+  z-index: 10;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -139,7 +141,9 @@ body {
 .studio {
   color: var(--accent-color-text);
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare navigatie catre pagini si contact--*/
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -168,6 +172,19 @@ body {
   position: relative;
 }
 
+.index.active::after,
+.index.current::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 1px);
+  height: 4px;
+  background-color: var(--button-color-filters);
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
 .index:hover::after,
 .portfolio:hover::after,
 .contacts:hover::after,
@@ -179,7 +196,7 @@ body {
   width: calc(100% - 1px);
   height: 4px;
   background-color: var(--button-color-filters);
-  bottom: -10px;
+  bottom: -27px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 3px;
@@ -195,9 +212,10 @@ body {
 .address a:focus {
   color: var(--button-color-filters);
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiunea hero si buton "order service"--*/
 .hero h1 {
-  position: relative;
   z-index: 4;
   font-size: 56px;
   font-weight: 700;
@@ -218,8 +236,7 @@ body {
   color: var(--primary-color);
 }
 
-.hero button {
-  position: relative;
+.hero .order-service-btn {
   z-index: 2;
   background-color: var(--accent-color-iris);
   cursor: pointer;
@@ -229,16 +246,6 @@ body {
   height: 56px;
   border-radius: 4px;
   margin-top: 48px;
-}
-
-.button {
-  position: relative;
-  z-index: 2;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  text-align: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -249,7 +256,9 @@ body {
 .hero button:active {
   background-color: var(--accent-color-iris);
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiunea descriere servicii si vectori--*/
 .one h3 {
   font-size: 20px;
   font-weight: 500;
@@ -311,9 +320,10 @@ body {
   width: 64px;
   height: 64px;
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiune "what are we doing" si imagini--*/
 .what-are {
-  margin-top: 120px;
   justify-content: center;
   margin-bottom: 72px;
   font-size: 36px;
@@ -337,7 +347,9 @@ body {
   display: flex;
   justify-content: center;
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiune "our team" si social links--*/
 .card ul.team-member {
   display: flex;
   list-style: none;
@@ -349,7 +361,6 @@ body {
   background-color: var(--accent-color-cloud);
   display: flex;
   justify-content: center;
-  margin-top: 120px;
 }
 
 .our-team {
@@ -432,8 +443,9 @@ body {
 .icons-list .icon:focus {
   background-color: var(--icons-color-hover);
 }
+/*---------------------------------------------------------*/
 
-/* stil css pentru custom h2 footer si vectori */
+/*--stilizare sectiune "customers"--*/
 .custom {
   font-weight: 700;
   font-size: 36px;
@@ -445,7 +457,6 @@ body {
 }
 
 .customers {
-  /*sectiunea*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -517,7 +528,9 @@ body {
   width: 1200px;
   height: 88px;
 }
-/*pana aici*/
+/*---------------------------------------------------------*/
+
+/*--stilizare footer, logo si linkuri sociale--*/
 footer {
   background-color: var(--accent-color-text);
 }
@@ -617,6 +630,41 @@ footer a {
   background-color: var(--green-new-color);
 }
 
-/************************************************************************/
-/**********************************************************************/
-/***************************************************************************/
+.is-hidden {
+  visibility: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  margin: 0 auto;
+  padding: 24px;
+  background-color: var(--modal-background-color);
+  width: 408px;
+  height: 584px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14);
+  margin-top: 80px;
+}
+
+.close-btn {
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  top: 24px;
+  right: 24px;
+  outline: none;
+  border-color: gray;
+}
+/*------------------------end---------------------------------*/
