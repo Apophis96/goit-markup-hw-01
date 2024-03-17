@@ -1,7 +1,7 @@
 
-# Tema #5 GoIT
+# Tema #6 GoIT
 
 
 
-[Webstudio Tema 5](https://apophis96.github.io/goit-markup-hw-01/)
+[Webstudio Tema 6](https://apophis96.github.io/goit-markup-hw-01/)
 
