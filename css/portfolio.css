@@ -395,6 +395,88 @@ footer a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* -------------------------------------subscribe-field---------------------------- */
+.submit-container {
+  margin-top: 100px;
+  margin-left: 125px;
+}
+
+.subscribe {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+}
+
+::placeholder {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.submit-container input {
+  background: var(--accent-color-text);
+  border: none;
+  width: 243px;
+  color: var(--primary-color);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid white;
+  margin: 16px 24px 0px 0px;
+  padding-left: 16px;
+}
+
+.submit-container button {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px 8px 24px;
+  cursor: pointer;
+  background: var(--accent-color-iris);
+  border: none;
+  border-radius: 4px;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.submit-container input:focus {
+  outline: none;
+  border: 1px solid var(--accent-color-iris);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-container button:hover {
+  background-color: var(--button-color-filters);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-container button:active {
+  background-color: var(--accent-color-iris);
+}
+
+.send {
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-color);
+}
+/* ---------------------------------------------------- */
+
 .footer-extras {
   box-sizing: border-box;
   width: 264px;
@@ -409,7 +491,7 @@ footer a {
   color: var(--accent-color-cloud);
   margin-top: 100px;
   margin-bottom: 132px;
-  margin-left: 120px;
+  margin-left: 150px;
 }
 
 .social-icons ul {

@@ -251,10 +251,14 @@ body {
   transition: var(--transitions);
 }
 
-.hero button:focus,
+/* .hero button:focus, */
 .hero button:hover {
   background-color: var(--button-color-filters);
-  transform: scale(1.2);
+}
+
+.hero button:active {
+  background-color: var(--accent-color-iris);
+  transition: var(--transitions);
 }
 /*---------------------------------------------------------*/
 
@@ -590,11 +594,10 @@ footer a {
 .social-icons {
   box-sizing: border-box;
   width: 208px;
-  height: 80;
+  height: 80px;
   color: var(--accent-color-cloud);
   margin-top: 100px;
-  margin-bottom: 132px;
-  margin-left: 120px;
+  margin-left: 150px;
 }
 
 .social-icons ul {
@@ -639,7 +642,89 @@ footer a {
   background-color: var(--green-new-color);
 }
 
-/* modal style start */
+/* --------------------subscribe-field------------------------------ */
+.submit-container {
+  margin-top: 100px;
+  margin-left: 125px;
+}
+
+.subscribe {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+}
+
+::placeholder {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.submit-container input {
+  background: var(--accent-color-text);
+  border: none;
+  width: 243px;
+  color: var(--primary-color);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid white;
+  margin: 16px 24px 0px 0px;
+  padding-left: 16px;
+}
+
+.submit-container button {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px 8px 24px;
+  cursor: pointer;
+  background: var(--accent-color-iris);
+  border: none;
+  border-radius: 4px;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.submit-container input:focus {
+  outline: none;
+  border: 1px solid var(--accent-color-iris);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-container button:hover {
+  background-color: var(--button-color-filters);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-container button:active {
+  background-color: var(--accent-color-iris);
+}
+
+.send {
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-color);
+}
+/* -------------------------------------------------------------- */
+
+/* ---------modal style start------------------- */
 .is-hidden {
   visibility: hidden;
   transform: scale(1.1);
@@ -657,19 +742,6 @@ footer a {
   background-color: var(--navy-blue-modal);
   z-index: 8;
   transition: transform var(--transitions);
-}
-
-.modal-content {
-  margin: 0 auto;
-  padding: 24px;
-  background-color: var(--modal-background-color);
-  width: 408px;
-  height: 584px;
-  position: relative;
-  border-radius: 4px;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 1px 1px 0 rgba(0, 0, 0, 0.14);
-  margin-top: 8px;
 }
 
 .close-btn {
@@ -692,5 +764,141 @@ footer a {
   cursor: pointer;
   transform: scale(1.5);
 }
-/* modal style  end */
+/* --------------------------------------------------------- */
+
+/* ------------continut modal---------- */
+.modal-content {
+  margin: 0 auto;
+  padding: 24px;
+  background-color: var(--modal-background-color);
+  width: 408px;
+  height: 584px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14);
+  margin-top: 8px;
+}
+
+.modal-content h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--accent-color-text);
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.modal-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 29px 0px 0px 16px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: var(--grey-new-color);
+  margin-bottom: 8px;
+}
+
+input {
+  height: 40px;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px solid var(--navy-blue-modal);
+  margin-top: 4px;
+}
+
+.text-input,
+.focus:focus-within {
+  outline: none;
+  border: 1px solid var(--accent-color-iris);
+}
+
+.input-fields:focus-within .modal-icon {
+  color: var(--accent-color-iris);
+}
+
+.text-input {
+  margin-top: 4px;
+  height: 120px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  resize: none;
+  border: 1px solid var(--navy-blue-modal);
+}
+
+.text-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: var(--navy-blue-modal);
+  padding: 8px 0px 0px 16px;
+}
+
+/* -------------------------checkbox----- */
+input:checked + svg.checkbox-icon {
+  color: var(--navy-blue-modal);
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-icon {
+  fill: white;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  width: min-content;
+}
+
+.check-text label {
+  color: var(--navy-blue-modal);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  margin-left: 8px;
+}
+.check-text span {
+  color: var(--accent-color-iris);
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* ------------------check-box end---------------------------------- */
+
+.send-btn {
+  background-color: var(--accent-color-iris);
+  color: var(--primary-color);
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin-top: 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*------------------- modal style end------------ */
 /*------------------------end---------------------------------*/
